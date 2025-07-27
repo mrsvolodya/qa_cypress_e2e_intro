@@ -37,6 +37,6 @@ Cypress.Commands.overwrite('visit', (originalFn, url, options) => {
   return originalFn('/user' + url, { ...options, timeout: 10000 });
 });
 
-Cypress.Commands.add('getPlaсeHolder', (placeholder) => {
+Cypress.Commands.add('getPlaceHolder', (placeholder) => {
   cy.get(`[placeholder=${placeholder}]`);
 });
