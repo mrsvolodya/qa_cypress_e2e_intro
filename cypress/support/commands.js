@@ -22,14 +22,14 @@
 //
 // -- This is a parent command --
 Cypress.Commands.add('login', (email, password) => {
-  cy.getPlaсeHolder('Email').type(email);
-  cy.getPlaсeHolder('Password').type(password);
+  cy.getPlaceHolder('Email').type(email);
+  cy.getPlaceHolder('Password').type(password);
 });
 
 Cypress.Commands.add('register', (username, email, password) => {
-  cy.getPlaсeHolder('Username').type(username);
-  cy.getPlaсeHolder('Email').type(email);
-  cy.getPlaсeHolder('Password').type(password);
+  cy.getPlaceHolder('Username').type(username);
+  cy.getPlaceHolder('Email').type(email);
+  cy.getPlaceHolder('Password').type(password);
 });
 
 // -- This will overwrite an existing command --

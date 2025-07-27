@@ -23,8 +23,8 @@ describe('Sign In page', () => {
     cy.visit('/login');
     cy.get('h1').should('contain.text', 'Sign in');
 
-    cy.getPlaсeHolder('Email').type(email);
-    cy.getPlaсeHolder('Password').type(password);
+    cy.getPlaceHolder('Email').type(email);
+    cy.getPlaceHolder('Password').type(password);
     cy.get('button').contains('Sign in').click();
 
     cy.contains('.nav-link', 'Settings').should('exist');
